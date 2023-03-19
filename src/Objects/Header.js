@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import logos from "../Assets/images/Logo.png";
 import fontTest from "../Assets/Fonts/FontsFree-Net-Avenir-Light.ttf";
-
+import { Link } from "react-scroll";
 
 const HeaderX = styled.nav`
     @font-face {
@@ -50,10 +50,27 @@ const HeaderX = styled.nav`
             }
             :nth-child(${props => props.PageNumber}){
                 color:#01d244;
-                &:hover{
-                    color: rgb(121 247 161);
+            &:hover{
+                color: rgb(121 247 161);
+            }
+
+                a{
+                    color: #01d244;
+                    &:hover{
+                        color: rgb(121 247 161);
+                    }
                 }
-        }
+            }
+            a{
+                    color: #939dab;
+                    text-decoration: none;
+                    font-family: 'headerFont';
+                    font-size: 20px;
+                    &:hover{
+                        color: rgb(197 205 215);
+                        transition: 0.5s;
+                    }
+            }
         }
 
        
@@ -119,6 +136,7 @@ const HeaderX = styled.nav`
             li{
                 margin: 20px;
                 font-size: 30px;
+               
             }
         }
 
@@ -185,11 +203,11 @@ export function Header({PageNumber}){
             </label>
             
             <ul>
-                <li><a>HOME</a></li>
-                <li><a>PROFESSIONAL</a></li>
-                <li><a>EXPERIENCE</a></li>
-                <li><a>PORTFOLIO</a></li>
-                <li><a>CONTACT</a></li>
+                <li><a href="/">HOME</a></li>
+                <li><Link activeClass="active" spy={true} smooth={true} offset={0} duration={2000}  to="skillsAnchor">SKILLS</Link></li>
+                <li><Link activeClass="active" spy={true} smooth={true} offset={0} duration={2000}  to="AcademicAnchor">ACADAMIC</Link></li>
+                <li><a href="/Portfolio">PORTFOLIO</a></li>
+                <li><Link activeClass="active" spy={true} smooth={true} offset={0} duration={2000} to="ContactForm">CONTACT</Link></li>
             </ul>
         </HeaderX>
     );   
