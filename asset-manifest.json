@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/MyWebSite/static/css/main.3961d593.css",
-    "main.js": "/MyWebSite/static/js/main.c3fb3898.js",
-    "static/media/Backgound1-min.jpg": "/MyWebSite/static/media/Backgound1-min.87969bb4d005f6d8208d.jpg",
-    "static/media/Backgound2-min.jpg": "/MyWebSite/static/media/Backgound2-min.17875092149404120d4b.jpg",
-    "static/media/Logo.png": "/MyWebSite/static/media/Logo.251b08f80dfea9e39379.png",
-    "static/media/FontsFree-Net-Avenir-Light.ttf": "/MyWebSite/static/media/FontsFree-Net-Avenir-Light.3d58440667d5d20a9f02.ttf",
-    "static/media/LuloCleanW01OneBold.ttf": "/MyWebSite/static/media/LuloCleanW01OneBold.cf6ce051896b18d3449b.ttf",
-    "index.html": "/MyWebSite/index.html",
-    "main.3961d593.css.map": "/MyWebSite/static/css/main.3961d593.css.map",
-    "main.c3fb3898.js.map": "/MyWebSite/static/js/main.c3fb3898.js.map"
+    "main.css": "/Protfolio/static/css/main.05e5142e.css",
+    "main.js": "/Protfolio/static/js/main.6b44eaaa.js",
+    "static/media/Backgound1-min.jpg": "/Protfolio/static/media/Backgound1-min.87969bb4d005f6d8208d.jpg",
+    "static/media/Backgound2-min.jpg": "/Protfolio/static/media/Backgound2-min.17875092149404120d4b.jpg",
+    "static/media/Logo.png": "/Protfolio/static/media/Logo.251b08f80dfea9e39379.png",
+    "static/media/FontsFree-Net-Avenir-Light.ttf": "/Protfolio/static/media/FontsFree-Net-Avenir-Light.3d58440667d5d20a9f02.ttf",
+    "static/media/Yassin_YOUNES_CV.pdf": "/Protfolio/static/media/Yassin_YOUNES_CV.661f7214d718e604b925.pdf",
+    "static/media/LuloCleanW01OneBold.ttf": "/Protfolio/static/media/LuloCleanW01OneBold.cf6ce051896b18d3449b.ttf",
+    "index.html": "/Protfolio/index.html",
+    "main.05e5142e.css.map": "/Protfolio/static/css/main.05e5142e.css.map",
+    "main.6b44eaaa.js.map": "/Protfolio/static/js/main.6b44eaaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.3961d593.css",
-    "static/js/main.c3fb3898.js"
+    "static/css/main.05e5142e.css",
+    "static/js/main.6b44eaaa.js"
   ]
 }
