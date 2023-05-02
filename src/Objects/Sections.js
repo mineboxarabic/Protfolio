@@ -1,9 +1,16 @@
 import { isMouseOverAComboBox , colorPalette } from './Context';
+
 import styled from "styled-components";
+
 import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useContext } from "react";
+
 import logos from "../Assets/images/Logo.png";
+
+import pdf from "../Assets/Yassin_YOUNES_CV.pdf";
 
 
 const Acadamic__main_Section = styled.section`
@@ -134,6 +141,7 @@ const Acadamic__main_Section = styled.section`
 
 
 `;
+
 const SkillsLanguagesList = styled.ul`
          background-color: ${colorPalette.darkGrey};
         list-style: none;
@@ -175,6 +183,7 @@ const SkillsLanguagesList = styled.ul`
         }
         }
 `;
+
 const ComboSkillStyle = styled.ul`
    list-style: none;
    height: ${props => props.heightx}px;
@@ -200,6 +209,7 @@ const ComboSkillStyle = styled.ul`
             
         
 `;
+
 const Skills_Title_Style = styled.div`
     .Header__Title{
     font-family: 'lulo font';
@@ -230,6 +240,7 @@ const Skills_Title_Style = styled.div`
 }
 
 `;
+
 const Small_popup = styled.div`
    position: absolute;
    top: 0px;
@@ -245,6 +256,7 @@ const Small_popup = styled.div`
       background-color: ${colorPalette.darkGrey};
    }
 `;
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
        if(entry.isIntersecting){
@@ -262,14 +274,15 @@ const observer = new IntersectionObserver((entries) => {
              entry.target.classList.remove("Container__Animation__Fade");
        }
     });
- });
+});
+
  export function Skills_Title({number,title,subtitle,id}){
     return(<Skills_Title_Style id={id}>
              <h1 className="Header__Title"><span>{number}</span> {title}</h1>
              <h1 className="Header__Title__1">{subtitle}</h1>
           </Skills_Title_Style>
     )
- }
+}
           
  export function ComboSkill(props){
     const [isFolded, setIsFolded] = React.useState(false);
@@ -288,7 +301,7 @@ const observer = new IntersectionObserver((entries) => {
           </ComboSkillStyle>
        </li>
     )
- }
+}
  
 export function AcademicLifeSection(){
 
@@ -345,9 +358,9 @@ Méthode : utilisation de HTML, CSS, JavaScript et PHP pour développer l'interf
       </>
       )
 }
+
 export function HomeBackgrounSection(){
    return(<>
-   
       <div className="Home__Background">
       <div  className="fixed" id="Home__Background__Image1"/>
       <div className="Home__Background__Text">
@@ -370,7 +383,10 @@ export function HomeBackgrounSection(){
             <p>
                Hi there! My name is Yassin Younes and I am passionate about programming and 3D design. I have a strong interest in creating backend projects and I also enjoy working on the front end. I have a broad range of experience with programming languages, which allows me to work effectively across various projects. I am always excited to take on new challenges and strive to deliver high-quality solutions.
             </p>
-            <button className="Home__About__Text__Button">DOWNLOAD CV</button>
+            <button className="Home__About__Text__Button" onClick={()=>{
+               //open the pdf
+               window.open(pdf, "_blank");
+            }}>DOWNLOAD CV</button>
          </div>
          <div className="Home__About__Image">
             </div>
@@ -381,6 +397,7 @@ export function HomeBackgrounSection(){
    </>
    )
 }
+
 export function SkillsSection(){
    return(
       <div className="Home__Skills">
@@ -511,6 +528,7 @@ const ContactSectionS = styled.div`
 
 }
 `;
+
 export function ContactSection(){
 
 
