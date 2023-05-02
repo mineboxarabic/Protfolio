@@ -1,8 +1,7 @@
 {
   "name": "mywebsite",
-  "homepage": "https://mineboxarabic.github.io/MyWebSite/",
+  "homepage": "https://Yassin-YOUNES.github.io/Protfolio/",
   "version": "0.1.0",
-  "homepage": "https://www.yassinyounes.com",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
