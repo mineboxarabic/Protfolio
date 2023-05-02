@@ -203,10 +203,10 @@ export function Header({PageNumber}){
             </label>
             
             <ul>
-                <li><a href="/">HOME</a></li>
+                <li><a href="#/">HOME</a></li>
                 <li><Link activeClass="active" spy={true} smooth={true} offset={0} duration={2000}  to="skillsAnchor">SKILLS</Link></li>
                 <li><Link activeClass="active" spy={true} smooth={true} offset={0} duration={2000}  to="AcademicAnchor">ACADAMIC</Link></li>
-                <li><a href="/Portfolio">PORTFOLIO</a></li>
+                <li><a href="#/Portfolio">PORTFOLIO</a></li>
                 <li><Link activeClass="active" spy={true} smooth={true} offset={0} duration={2000} to="ContactForm">CONTACT</Link></li>
             </ul>
         </HeaderX>
