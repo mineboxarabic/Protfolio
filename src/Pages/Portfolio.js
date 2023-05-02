@@ -91,7 +91,7 @@ function Portfolio(){
                 <Link offset={100} smooth={true} to='GalleryProjects' duration={1000}>PROGRAMMING</Link>
             </div>
             <div className='Choice__Design'> 
-                <a href='/Designs'>DESIGN</a>
+                <a href='#/Designs'>DESIGN</a>
             </div>
             
         </Choice__Container>
